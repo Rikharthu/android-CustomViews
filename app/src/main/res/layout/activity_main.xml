@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- your custom attributes belong to a different namespace
+       Instead of belonging to the http://schemas.android.com/apk/res/android namespace,
+       they belong to http://schemas.android.com/apk/res/[your package name]
+       better use res-auto, so Android will resolve it for you automatically-->
+
+    <com.example.android.customviews.views.ShapeSelectorView
+        android:id="@+id/shapeSelector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:displayShapeName="true"
+        custom:shapeColor="@color/colorAccent"
+        android:layout_alignParentTop="true"/>
+
+    <com.example.android.customviews.views.VersionView
+        android:id="@+id/versionView"
+        android:layout_below="@id/shapeSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.example.android.customviews.views.LengthPicker
+        android:id="@+id/lengthPicker"
+        android:layout_below="@id/versionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

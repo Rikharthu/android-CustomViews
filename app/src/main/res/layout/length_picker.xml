@@ -1,0 +1,38 @@
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  <!--bind child views directly to the parent layout they are inflated to (LinearLayout in our case)-->
+  <!--
+  if <merge>:
+  LengthPicker{
+    Button
+    TextView
+    Button
+  }
+
+  if <LinearLayout>:
+  LengthPicker{
+    LinearLayout
+      Button
+      TextView
+      Button
+  }
+  -->
+
+  <Button
+      android:id="@+id/minus_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/minus" />
+  <TextView
+      android:id="@+id/text"
+      android:layout_width="96dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:textAppearance="@android:style/TextAppearance.Large" />
+  <Button
+      android:id="@+id/plus_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/plus" />
+</merge>

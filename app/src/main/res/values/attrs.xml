@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Define custom attributes for your view -->
+    <declare-styleable name="PieChart"> <!--define styleable entity-->
+        <!--name - attribute name
+            format - expected data format
+            (string, color, dimension, boolean, integer, float, enum)-->
+        <attr name="showText" format="boolean" />
+        <attr name="labelPosition" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ShapeSelectorView">
+        <attr name="shapeColor" format="color" />
+        <attr name="displayShapeName" format="boolean" />
+    </declare-styleable>
+
+
+</resources>
